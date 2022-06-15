@@ -1,0 +1,83 @@
+.login-container{
+    width: 35%;
+    padding-right: 50px;
+    text-align: center;
+    margin-top: 60px!important;
+}
+
+.sign-up-container{
+    width: 45%;
+    text-align: center;
+    margin-top: 60px!important;
+}
+
+.login_input_text{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px !important;
+    line-height: 25px;
+    letter-spacing: 0.1px !important;
+}
+
+#login_input_password{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px !important;
+    line-height: 25px;
+    letter-spacing: 0.1px !important;
+}
+
+#confirm_input_password{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px !important;
+    line-height: 25px;
+    letter-spacing: 0.1px !important;
+}
+
+.header-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
+    height: 55px;
+    background: #1e70bf;
+    position: fixed;
+    left:0px;
+    top: 0px;
+    color: var(--bg);
+    align-items: center;
+    padding: 0vh 0.75em;
+    font-size: 2em;
+    z-index: 3;
+}
+
+@media only screen and (max-width: 1099px) and (min-width:768px) {
+    .login-container{
+        width: 65%;
+        padding-right: 50px;
+        text-align: center;
+        margin-top: 60px!important;
+    }
+    
+    .sign-up-container{
+        width: 75%;
+        text-align: center;
+        margin-top: 60px!important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .login-container{
+        width: 90%;
+        padding-right: 50px;
+        text-align: center;
+        margin-top: 60px!important;
+    }
+    
+    .sign-up-container{
+        width: 90%;
+        text-align: center;
+        margin-top: 60px!important;
+    }
+}
