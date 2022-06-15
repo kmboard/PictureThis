@@ -5,7 +5,10 @@ import PortfolioContainer from './PortfolioContainer';
 import PortfolioDetail from './PortfolioDetail';
 import Homepage from './Homepage';
 import Register from './Register';
+<<<<<<< HEAD
+=======
 import PortfolioFormContainer from './PortfolioFormContainer';
+>>>>>>> main
 
 class App extends React.Component{
 
@@ -33,8 +36,11 @@ class App extends React.Component{
 										<Route path="/" exact component={props => <Homepage {...props} />}  />
 										<Route path="/register" exact component={props => <Register {...props}/>}  />
 										<Route path="/portfolios" exact component={props => <PortfolioContainer {...props}/>}  />
+<<<<<<< HEAD
+=======
 										<Route path="/create-portfolio" exact component={props => <PortfolioFormContainer createMode={true} {...props}/>}  />
 										<Route path="/edit-portfolio" exact component={props => <PortfolioFormContainer createMode={false} {...props}/>}  />
+>>>>>>> main
 										<Route path="/detail/:portfolioId" exact component={props => <PortfolioDetail {...props}/>}  />
 									</Switch>
 								</div>

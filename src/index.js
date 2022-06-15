@@ -12,9 +12,13 @@ import reducers from './reducers';
 import {createStore, applyMiddleware, compose} from 'redux';
 import reduxThunk from 'redux-thunk';
 import { persistStore, persistReducer } from 'redux-persist';
+<<<<<<< HEAD
+import { PersistGate } from 'redux-persist/lib/integration/react';
+=======
 import { ApolloProvider } from 'react-apollo';
 import client from './api/ApolloClient';
 
+>>>>>>> main
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__||compose;
 // const composeEnhancers = compose;
@@ -28,11 +32,17 @@ export const persistor = persistStore(store);
 
 ReactDOM.render(
       <Provider store={store}>
+<<<<<<< HEAD
+          <Router history={history}>
+              <App />
+          </Router>
+=======
         <ApolloProvider client={client}>
           <Router history={history}>
               <App />
           </Router>
         </ApolloProvider>
+>>>>>>> main
       </Provider>,
 	document.querySelector('#root'),
 );
