@@ -61,7 +61,7 @@ class PortfolioContainer extends React.Component{
 		return(
 			<div style={{width:'100%',scrollbarColor:'transparent transparent',scrollbarWidth:'none',userSelect:'text'}}>
                 <Header/>
-                <Card.Group itemsPerRow={5} className="portfolio-container" style={{display:'flex'}}>
+                <Card.Group itemsPerRow={document.documentElement.clientWidth>767?4:1} className="portfolio-container" style={{display:'flex'}}>
 					{this.state.portfolioData[0]?this.state.portfolioData.map((item)=>(<Card className="portfolio-card" color="yellow" onClick={()=>{this.props.history.push(`/detail/${item._id}`)}}>
 							<Image src={item.files?item.files[0]:""} wrapped ui={false} />
 							<Card.Content>

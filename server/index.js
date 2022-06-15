@@ -8,6 +8,7 @@ require("dotenv").config();
 const multer = require("multer");
 const path = require("path");
 var cors = require('cors')
+const publicPath = path.join(__dirname, './', 'build');
 
 const port = process.env.PORT || 3000;
 
@@ -81,6 +82,12 @@ app.post("/upload", imageUpload.single("photo"), (req, res) => {
 
 app.use(loggingMiddleware);
 app.use(express.static("uploads"));
+app.use(express.static(publicPath));
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(publicPath, 'index.html'));
+});
+
 app.use(
   "/graph",
   graphQLHttp({

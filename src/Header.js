@@ -24,7 +24,7 @@ class Header extends React.Component{
 			<div className="header-container">
                 <div>
 					<Link className='headerText' to={this.props.isSignedIn?"/portfolios":"/"}>
-						<p style={{color: 'white'}}>Portfolio Spot</p>
+						<p style={{color: 'white'}}>PictureThis</p>
                     </Link>
 				</div>
 				{this.props.isSignedIn?<div style={{marginRight: '5px', display: "flex", alignItems:"baseline"}} >

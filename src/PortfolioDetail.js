@@ -1,7 +1,8 @@
 import React from 'react';
 import Header from './Header';
 import { connect } from 'react-redux';
-import { Segment, Card} from 'semantic-ui-react';
+import { Segment, Accordion, Icon, Image, Card} from 'semantic-ui-react';
+import { Link } from 'react-router-dom';
 import './styles/PortfolioContainer.css';
 import client from './api/ApolloClient';
 import gql from 'graphql-tag';
